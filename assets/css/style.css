@@ -1,0 +1,52 @@
+:root {
+    --primaria: rgb(103, 22, 150);
+    --secundaria: #e9eaed;
+}
+
+.container {
+    width: 70vw;
+    background: var(--secundaria);
+    height: max-content;
+    padding: 20px 40px;
+    border-radius: 5px;
+    margin-left: 15vw;
+    margin-top: 70px;
+}
+
+.form {
+    background: var(--primaria);
+    width: 30%;
+    height: 230px;
+    border-radius: 5px;
+    margin-left: 35%;
+    padding: 20px 30px;
+}
+
+.form h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    color: var(--secundaria);
+}
+
+.form input {
+    width: 90%;
+    padding: 7px 10px;
+    margin-top: 4px;
+}
+
+/* Classe para estilizar o botão da página de cadastro*/
+.form .btn {
+    background: #e9eaed;
+    color: var(--primaria);
+    padding: 5px 7px;
+    font-weight: 700;
+    float: right;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.form .btn:hover {
+    background: #CCC;
+}
