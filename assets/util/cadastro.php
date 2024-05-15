@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de funcionário</title>
+    <title>Cadastrar funcionário</title>
 </head>
+<p><a href="../../index.php">Voltar</a><a href="./consultar.php">Consultar</a></p>
 <body>
-    <!-- Inicio do formulário -->
-    <form action="./cadastro.php" method="post">
+    
+    <form action="insert_cadastro.php" method="post">
         <!-- Nome -->
         <label for="nome">
             Nome:
@@ -34,29 +35,6 @@
                     <option value="Diretor">Diretor</option>
                     <option value="Presidente">Presidente</option>
                 </select>
-                <!--
-                <input type="radio" name="cargo" id="name">
-                Estagiário <br>
-                <input type="radio" name="cargo">
-                Auxiliar <br>
-                <input type="radio" name="cargo" id="name">
-                Assistente <br>
-                <input type="radio" name="cargo">
-                Técnico <br>
-                <input type="radio" name="cargo" id="name">
-                Trainee <br>
-                <input type="radio" name="cargo">
-                Analista <br>
-                <input type="radio" name="cargo" id="name">
-                Encarregado <br>
-                <input type="radio" name="cargo">
-                Coordenador/ Supervisor <br>
-                <input type="radio" name="cargo" id="name">
-                Gerente <br>
-                <input type="radio" name="cargo">
-                Diretor <br>
-                <input type="radio" name="cargo">
-                Presidente -->
             </div>
         </label>
 
@@ -105,18 +83,14 @@
             </div>
         </label>
 
+        <br>
+
         <!-- Botao para limpar o formulário e gravar os dados do formulário -->
         <div>
             <button type="reset">Limpar formulário</button>
             <button type="submit">Gravar dados</button>
         </div>
     </form>
-
-
-<br><br><br><br><br><br>
-
-    
-
 
 
 </body>
