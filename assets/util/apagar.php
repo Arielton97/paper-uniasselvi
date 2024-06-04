@@ -6,7 +6,10 @@
         echo "Falha ao conectar ao MySQL: " . mysqli_connect_error();         
         exit();     
     }
-    $id = $_GET['idfuncionario'];   
+
+    // para deletar
+
+    $id = $_GET['id'];   
 
     $sql = "DELETE FROM funcionario WHERE idfuncionario = " . mysqli_real_escape_string($conexao, $id);      
     $resultado = mysqli_query($conexao, $sql); 
