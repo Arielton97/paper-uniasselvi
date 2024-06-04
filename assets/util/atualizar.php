@@ -12,7 +12,7 @@
 
         $id = mysqli_real_escape_string($conexao, $_POST['idfuncionario']);
 
-        $sql = "UPDATE funcionarios SET nome = '$nome', 
+        $sql = "UPDATE funcionario SET nome = '$nome', 
                                     cargo = '$cargo', 
                                     descricao_do_cargo = '$descricaoDoCargo', 
                                     setor = '$setor', 

@@ -54,6 +54,33 @@ Lembrando que esses valores são apenas médias e podem variar consideravelmente
 
 ![Logo](https://portal.uniasselvi.com.br/public/img/site/logo-horizontal_desk.png)
 ![Homepage](assets/img/homepage.png)
-![Cadastro](assets/img/cadastro_homepage.png)
+![Cadastro](assets/img/cadastro_homepage(1).png)
 ![Consulta](assets/img/consulta_homepage.png)
 ![Atualizar](assets/img/homepage_atualizar.png)
+
+
+
+## Informações para voce criar o seu banco de dados
+
+CREATE SCHEMA `uniasselvi` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ;
+
+
+
+CREATE TABLE `uniasselvi`.`funcionario` (
+  `idfuncionario` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NULL,
+  `cargo` VARCHAR(45) NULL,
+  `descricao_do_cargo` VARCHAR(150) NULL,
+  `setor` VARCHAR(45) NULL,
+  `salario` VARCHAR(20) NULL,
+  PRIMARY KEY (`idfuncionario`));
+
+Precisei alterar a coluna descricao_do_cargo onde recebia 150 caracteres. Alterei para receber 255 caracteres.
+
+
+ALTER TABLE `uniasselvi`.`funcionario` 
+CHANGE COLUMN `descricao_do_cargo` `descricao_do_cargo` VARCHAR(255) NULL DEFAULT NULL ;
+
+## Ao final de tudo, seu app funcionará, mas com erro na senha do banco de dados dos arquivos: 
+- conexao.php (/util/conexao.php). Coloque a senha do seu banco de dados, se houver
+- insert_cadastro.php (/util/insert_cadastro.php). Coloque a também do seu banco de dados, se houver.
