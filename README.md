@@ -75,11 +75,6 @@ CREATE TABLE `uniasselvi`.`funcionario` (
   `salario` VARCHAR(20) NULL,
   PRIMARY KEY (`idfuncionario`));
 
-<<<<<<< HEAD
-=======
-Precisei alterar a coluna descricao_do_cargo onde recebia 150 caracteres. Alterei para receber 255 caracteres.
-
->>>>>>> 7883522d7d0eb71d419e379660759fc9aa4a3076
 
 ## Ao final de tudo, seu app funcionará, mas com erro na senha do banco de dados dos arquivos: 
 - conexao.php (/util/conexao.php). Coloque a senha do seu banco de dados, se houver

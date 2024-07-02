@@ -3,7 +3,7 @@
     //Variáveis para conexão com o banco de dados
     $host = "localhost";
     $usuario = "root";
-    $senha = "199703";  //Defina a senha do seu banco de dados
+    $senha = "";  //Defina a senha do seu banco de dados
     $banco = "uniasselvi";
 
     //Variável de conexão com o banco de dados
