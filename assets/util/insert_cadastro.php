@@ -2,7 +2,7 @@
 
     $servidor = "localhost";
     $usuario = "root";
-    $senha = "";  // Defina a senha do seu banco de dados 
+    $senha = "199703";  // Defina a senha do seu banco de dados 
     $bancodedados = "uniasselvi";
 
     // Abre a conexão com o banco de dados lista de habito

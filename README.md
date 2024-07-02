@@ -70,16 +70,11 @@ CREATE TABLE `uniasselvi`.`funcionario` (
   `idfuncionario` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
   `cargo` VARCHAR(45) NULL,
-  `descricao_do_cargo` VARCHAR(150) NULL,
+  `descricao_do_cargo` VARCHAR(255) NULL,
   `setor` VARCHAR(45) NULL,
   `salario` VARCHAR(20) NULL,
   PRIMARY KEY (`idfuncionario`));
 
-Precisei alterar a coluna descricao_do_cargo onde recebia 150 caracteres. Alterei para receber 255 caracteres.
-
-
-ALTER TABLE `uniasselvi`.`funcionario` 
-CHANGE COLUMN `descricao_do_cargo` `descricao_do_cargo` VARCHAR(255) NULL DEFAULT NULL ;
 
 ## Ao final de tudo, seu app funcionará, mas com erro na senha do banco de dados dos arquivos: 
 - conexao.php (/util/conexao.php). Coloque a senha do seu banco de dados, se houver

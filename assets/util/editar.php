@@ -64,7 +64,7 @@
                             </label>
                         </div>
 
-                        <!-- Cargo OK-->
+                        <!-- Cargo -->
                         <div class="separar">
                             <label for="cargo">
                                 <div>
