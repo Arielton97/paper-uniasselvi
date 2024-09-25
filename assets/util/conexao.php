@@ -2,7 +2,7 @@
 
     //Variáveis para conexão com o banco de dados
     $host = "localhost";
-    $usuario = "root";
+    $usuario = "mysql_user";
     $senha = "Mysql_senha";  //Defina a senha do seu banco de dados
     $banco = "uniasselvi";
 
